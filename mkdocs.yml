@@ -96,7 +96,7 @@ plugins:
   - blog
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
+  #- minify:
       minify_html: true
 
 # Hooks
@@ -180,12 +180,11 @@ nav:
   - Products:
     - products/index.md
     - Template Design Tool: template-design-tool.md
-
     - Document Generation API: docgen-api.md
     - Visual PDF Diff API: visual-pdf-diff.md
   - Applications:
-    Contract: contract.md
-    Invoice: invoice.md  
+    - Contract: contract.md
+    - Invoice: invoice.md  
   - Getting started:
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
