@@ -177,6 +177,15 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+  - Products:
+    - products/index.md
+    - Template Design Tool: template-design-tool.md
+
+    - Document Generation API: docgen-api.md
+    - Visual PDF Diff API: visual-pdf-diff.md
+  - Applications:
+    Contract: contract.md
+    Invoice: invoice.md  
   - Getting started:
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
