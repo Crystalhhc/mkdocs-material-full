@@ -36,7 +36,6 @@ copyright: Copyright &copy; 2016 - 2024 Martin Donath
 # Configuration
 theme:
   name: material
-  language: zh-TW
   custom_dir: material/overrides
   features:
     - announce.dismiss
@@ -58,7 +57,7 @@ theme:
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -99,8 +98,8 @@ plugins:
       categories_name: Categories
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  #- pdf-export
-  #- minify: minify_html: true
+  #- minify:
+      minify_html: true
 
 # Hooks
 hooks:
@@ -126,13 +125,6 @@ extra:
       link: https://fosstodon.org/@squidfunk
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
-  alternate:
-    - name: English
-      link: /en/ 
-      lang: en
-    - name: 中文正體
-      link: /zh-TW/
-      lang: zh-TW
 
 # Extensions
 markdown_extensions:
@@ -194,58 +186,48 @@ nav:
     - Visual PDF Diff Service: products/visual-pdf-diff-service.md
   - Applications:
     - Contract: applications/contract.md
-    - Invoice: applications/invoice.md
-    - Bill: applications/bill.md
-  - MKDocs Material:
-    - MKDocs.yml: mkdocs-material/mkdocs-yml.md
-    - Base.html: mkdocs-material/base-html.md
-    - 多語問題: mkdocs-material/multi-language.md
+    - Invoice: applications/invoice.md  
   - Demo: demo/
-  #- Getting started:
-    #- Installation: getting-started.md
-    #- Creating your site: creating-your-site.md
-    #- Publishing your site: publishing-your-site.md
-    #- Customization: customization.md
-    #- Conventions: conventions.md
-    #- Browser support: browser-support.md
-    #- Enterprise feedback: enterprise-support.md
-    #- Philosophy: philosophy.md
-    #- Alternatives: alternatives.md
-    #- License: license.md
-    #- Changelog:
-      #- changelog/index.md
-      #- How to upgrade: upgrade.md
-  #- Setup:
-    #- setup/index.md
-    #- Changing the colors: setup/changing-the-colors.md
-    #- Changing the fonts: setup/changing-the-fonts.md
-    #- Changing the language: setup/changing-the-language.md
-    #- Changing the logo and icons: setup/changing-the-logo-and-icons.md
-    #- Ensuring data privacy: setup/ensuring-data-privacy.md
-    #- Setting up navigation: setup/setting-up-navigation.md
-    #- Setting up site search: setup/setting-up-site-search.md
-    #- Setting up site analytics: setup/setting-up-site-analytics.md
-    #- Setting up social cards: setup/setting-up-social-cards.md
-    #- Setting up a blog: setup/setting-up-a-blog.md
-    #- Setting up tags: setup/setting-up-tags.md
-    #- Setting up versioning: setup/setting-up-versioning.md
-    #- Setting up the header: setup/setting-up-the-header.md
-    #- Setting up the footer: setup/setting-up-the-footer.md
-    #- Adding a git repository: setup/adding-a-git-repository.md
-    #- Adding a comment system: setup/adding-a-comment-system.md
-    #- Building an optimized site: setup/building-an-optimized-site.md
-    #- Building for offline usage: setup/building-for-offline-usage.md
-    #- Extensions:
-      #- setup/extensions/index.md
-      #- Python Markdown: setup/extensions/python-markdown.md
-      #- Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
+  - Getting started:
+    - Installation: getting-started.md
+    - Creating your site: creating-your-site.md
+    - Publishing your site: publishing-your-site.md
+    - Customization: customization.md
+    - Conventions: conventions.md
+    - Browser support: browser-support.md
+    - Enterprise feedback: enterprise-support.md
+    - Philosophy: philosophy.md
+    - Alternatives: alternatives.md
+    - License: license.md
+    - Changelog:
+      - changelog/index.md
+      - How to upgrade: upgrade.md
+  - Setup:
+    - setup/index.md
+    - Changing the colors: setup/changing-the-colors.md
+    - Changing the fonts: setup/changing-the-fonts.md
+    - Changing the language: setup/changing-the-language.md
+    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
+    - Ensuring data privacy: setup/ensuring-data-privacy.md
+    - Setting up navigation: setup/setting-up-navigation.md
+    - Setting up site search: setup/setting-up-site-search.md
+    - Setting up site analytics: setup/setting-up-site-analytics.md
+    - Setting up social cards: setup/setting-up-social-cards.md
+    - Setting up a blog: setup/setting-up-a-blog.md
+    - Setting up tags: setup/setting-up-tags.md
+    - Setting up versioning: setup/setting-up-versioning.md
+    - Setting up the header: setup/setting-up-the-header.md
+    - Setting up the footer: setup/setting-up-the-footer.md
+    - Adding a git repository: setup/adding-a-git-repository.md
+    - Adding a comment system: setup/adding-a-comment-system.md
+    - Building an optimized site: setup/building-an-optimized-site.md
+    - Building for offline usage: setup/building-for-offline-usage.md
+    - Extensions:
+      - setup/extensions/index.md
+      - Python Markdown: setup/extensions/python-markdown.md
+      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
   - Documentation:
     - documentation/index.md
-    - Document Generation Service: 
-      - documentation/docgen/index.md
-      - Setup: documentation/docgen/setup.md
-    - Template Design Tool: 
-      - documetation/tmpl-tool/index.md
     - Blog: plugins/blog.md
     - Group: plugins/group.md
     - Info: plugins/info.md
@@ -258,9 +240,9 @@ nav:
     - Social: plugins/social.md
     - Tags: plugins/tags.md
     - Typeset: plugins/typeset.md
-    #- Requirements:
-      #- Image processing: plugins/requirements/image-processing.md
-      #- Caching: plugins/requirements/caching.md
+    - Requirements:
+      - Image processing: plugins/requirements/image-processing.md
+      - Caching: plugins/requirements/caching.md
   - Reference:
     - reference/index.md
     - Admonitions: reference/admonitions.md
@@ -278,13 +260,13 @@ nav:
     - Lists: reference/lists.md
     - Math: reference/math.md
     - Tooltips: reference/tooltips.md
-  #- Insiders:
-    #- insiders/index.md
-    #- Getting started: insiders/getting-started.md
-    #- FAQ: insiders/faq/sponsoring.md
-    #- Changelog:
-      #- insiders/changelog/index.md
-      #- How to upgrade: insiders/upgrade.md
+  - Insiders:
+    - insiders/index.md
+    - Getting started: insiders/getting-started.md
+    - FAQ: insiders/faq/sponsoring.md
+    - Changelog:
+      - insiders/changelog/index.md
+      - How to upgrade: insiders/upgrade.md
   - Community:
     - Contributing:
       - contributing/index.md
