@@ -19,19 +19,19 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_url: https://squidfunk.github.io/mkdocs-material/
-site_author: Martin Donath
+site_name: Crystalhhc Document Center
+site_url: https://github.com/Crystalhhc/mkdocs-material
+site_author: Crystal Chen
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
   minutes – searchable, customizable, in 60+ languages, for all devices
 
 # Repository
-repo_name: squidfunk/mkdocs-material
+repo_name: Crystalhhc/mkdocs-material
 repo_url: https://github.com/Crystalhhc/mkdocs-material-full
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2024 Martin Donath
+copyright: Copyright &copy; 2016 - 2024 Crystal Chen
 
 # Configuration
 theme:
@@ -39,7 +39,7 @@ theme:
   language: zh-TW
   custom_dir: material/overrides
   features:
-    - announce.dismiss
+    #- announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -65,7 +65,7 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+    - toc.integrate
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -200,10 +200,12 @@ nav:
     - Invoice: applications/invoice.md
     - Bill: applications/bill.md
   - MKDocs Material:
+    - Installation: installation.md
     - MKDocs.yml: mkdocs-material/mkdocs-yml.md
     - Base.html: mkdocs-material/base-html.md
     - 多語問題: mkdocs-material/multi-language.md
     - PDF output: mkdocs-material/pdf.md
+    - Banner去除問題: mkdocs-material/pdf.md
   - Demo: demo/
   - Community:
     - Contributing:
